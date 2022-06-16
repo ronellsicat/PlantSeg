@@ -1,4 +1,4 @@
-function [BW,maskedRGBImage] = createMask(RGB)
+function [BW,maskedRGBImage] = createMaskRootsLABorig(RGB)
 %createMask  Threshold RGB image using auto-generated code from colorThresholder app.
 %  [BW,MASKEDRGBIMAGE] = createMask(RGB) thresholds image RGB using
 %  auto-generated code from the colorThresholder app. The colorspace and

@@ -12,9 +12,9 @@ function binaryMask = SegmentPlant(inputImage, maxIslandNumPixels)
 
     imageHist = histeq(inputImage);
     
-    binaryMask = imageHist(:,:,2) >= 128;
-    binaryMask = binaryMask & createMaskYCBCR(imageHist);
-    binaryMask = binaryMask & createMaskLAB(imageHist);
+    binaryMask = imageHist(:,:,2) >= 128 & ...
+        createMaskPlantYCBCRhist(imageHist) & ...
+        createMaskPlantLABhist(imageHist);
     binaryMask = imclearborder(binaryMask, 8);
     binaryMask = bwareaopen(binaryMask, maxIslandNumPixels);
     

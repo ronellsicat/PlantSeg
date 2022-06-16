@@ -1,4 +1,4 @@
-function [BW,maskedRGBImage] = createMask(RGB)
+function [BW,maskedRGBImage] = createMaskPlantYCBCRhist(RGB)
 %createMask  Threshold RGB image using auto-generated code from colorThresholder app.
 %  [BW,MASKEDRGBIMAGE] = createMask(RGB) thresholds image RGB using
 %  auto-generated code from the colorThresholder app. The colorspace and
@@ -11,19 +11,19 @@ function [BW,maskedRGBImage] = createMask(RGB)
 
 
 % Convert RGB image to chosen color space
-I = rgb2lab(RGB);
+I = rgb2ycbcr(RGB);
 
 % Define thresholds for channel 1 based on histogram settings
-channel1Min = 62.151;
-channel1Max = 100.000;
+channel1Min = 107.000;
+channel1Max = 255.000;
 
 % Define thresholds for channel 2 based on histogram settings
-channel2Min = -23.965;
-channel2Max = 16.082;
+channel2Min = 0.000;
+channel2Max = 156.000;
 
 % Define thresholds for channel 3 based on histogram settings
-channel3Min = -20.692;
-channel3Max = 12.110;
+channel3Min = 0.000;
+channel3Max = 255.000;
 
 % Create mask based on chosen histogram thresholds
 sliderBW = (I(:,:,1) >= channel1Min ) & (I(:,:,1) <= channel1Max) & ...
