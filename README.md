@@ -10,3 +10,4 @@ Follow the steps below to use it.
 8. Click "Export Data" to export metadata (filename, plate number, condition, gentype 1 and 2, root and shoot sizes) to a csv file.
 
 Note that the "Mask Appearance" tab allows you to modify the mask appearance in the plot. The "Help" tab will show the above instructions.
+You can also hover the mouse cursor over any button to see the tooltips.
