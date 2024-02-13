@@ -1,0 +1,113 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3468167185" file="F:\Dev\PlantSeg\PlantSeg.prj" location="F:\Dev\PlantSeg" name="PlantSeg" preferred-package-location="F:\Dev\PlantSeg\PlantSeg\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>PlantSeg</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Ronell Sicat</param.authnamewatermark>
+    <param.email>ronell.sicat@kaust.edu.sa</param.email>
+    <param.company>KAUST Visualization Core Lab</param.company>
+    <param.summary>This application provides a mix of automatic and manual segmentation and analysis tools for plant images.</param.summary>
+    <param.description>Check out the code at https://github.com/ronellsicat/PlantSeg.</param.description>
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\PlantSeg\</param.installpath.string>
+    <param.installpath.combo>option.installpath.appdata</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\PlantSegApp\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\PlantSegApp\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\PlantSegApp\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\PlantSegApp</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>PlantSegInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>PlantSegInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.screenshot />
+      <param.guid />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\PlantSeg.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\createMaskPlantLABhist.m</file>
+      <file>${PROJECT_ROOT}\createMaskPlantYCBCRhist.m</file>
+      <file>${PROJECT_ROOT}\createMaskRootsLABhist.m</file>
+      <file>${PROJECT_ROOT}\createMaskRootsLABorig.m</file>
+      <file>${PROJECT_ROOT}\createMaskShootsHSVorig.m</file>
+      <file>${PROJECT_ROOT}\SegmentPlant.m</file>
+      <file>${PROJECT_ROOT}\SegmentRoots.m</file>
+      <file>${PROJECT_ROOT}\SegmentShoots.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\PlantSegApp\for_testing" name="readme.txt" optional="true">F:\Dev\PlantSeg\PlantSegApp\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\PlantSegApp\for_testing" name="splash.png" optional="false">F:\Dev\PlantSeg\PlantSegApp\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\PlantSegApp\for_testing" name="PlantSeg.exe" optional="false">F:\Dev\PlantSeg\PlantSegApp\for_testing\PlantSeg.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2023b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
