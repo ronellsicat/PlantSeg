@@ -1,6 +1,8 @@
 This Matlab application provides a mix of automatic and manual segmentation and analysis tools for images of plant roots and shoots.
 Follow the steps below to use it and refer to app screenshot below for guidance.
-1. Run the PlantSeg.mlapp application.
+
+1.a. If you have Matlab installed, just double click and run the PlantSeg.mlapp application. 
+1.b. If you don't have Matlab and are using Windows, run the standalone app installer in "PlantSegApp/for_redistribution/PlantSegInstaller_mcr.exe" and follow the installation instructions. Then run the installed PlantSeg application. If you can't find it, you can also run it from "PlantSegApp/for_redistribution_files_only/PlantSeg.exe".
 2. Click "New" or "Load" button to start a new session or load a previous session. For a new session, choose a folder containing the images you want to analyze. The "input" folder contains example images that can be used for testing.
 3. Click "Prev" or "Next" button to select an image to process.
 4. Click "Auto Segment" button to apply automatic segmentation. You can change the parameters in "Segmentation" panel. See tooltips for more info. 
@@ -12,4 +14,4 @@ Follow the steps below to use it and refer to app screenshot below for guidance.
 Note that the "Mask Appearance" tab allows you to modify the mask appearance in the plot. The "Help" tab will show the above instructions.
 You can also hover the mouse cursor over any button to see the tooltips.
 
-![Alt text](archive/plantseg_ui.png?raw=true "Title")
+![PlantSeg UI](archive/plantseg_ui.png?raw=true "PlantSeg UI")
