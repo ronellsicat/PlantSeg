@@ -1,5 +1,5 @@
 This Matlab application provides a mix of automatic and manual segmentation and analysis tools for images of plant roots and shoots.
-Follow the steps below to use it.
+Follow the steps below to use it and refer to app screenshot below for guidance.
 1. Run the PlantSeg.mlapp application.
 2. Click "New" or "Load" button to start a new session or load a previous session. For a new session, choose a folder containing the images you want to analyze. The "input" folder contains example images that can be used for testing.
 3. Click "Prev" or "Next" button to select an image to process.
@@ -11,3 +11,5 @@ Follow the steps below to use it.
 
 Note that the "Mask Appearance" tab allows you to modify the mask appearance in the plot. The "Help" tab will show the above instructions.
 You can also hover the mouse cursor over any button to see the tooltips.
+
+![Alt text](archive/plantseg_ui.png?raw=true "Title")
